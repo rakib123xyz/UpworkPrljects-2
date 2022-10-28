@@ -103,10 +103,15 @@ def setCurrentProduct(current):
 
 
 def handleError():
-    try:
-        menuSelector = driver.find_element('CSS_SELECTOR','#top_menu')
-    except:
-        driver.refresh()
+    while True:
+        try:
+            menuSelector = driver.find_element('xpath','//div[@id="top_menu"]')
+            return None
+        except:
+            driver.refresh()
+            print('refresh ' + position)
+
+        print("continue")
 
 
 def moveToProducts(terget=0):
@@ -148,8 +153,9 @@ position = 0
 
 
 #Go to next page. Loop
-nextPage = driver.find_element('xpath','//a[@class="paginate_button next"]')
+
 while True:
+    handleError()
     nextPage = driver.find_element('xpath','//a[@class="paginate_button next"]')
     productsAction = driver.find_elements('xpath','''//table/tbody/tr[@role='row']/td/div[@class="dropdown element_action"]''')
     products = driver.find_elements('xpath','''//table/tbody/tr[@role='row']/td/div//ul/li[1]''')
@@ -157,74 +163,79 @@ while True:
     # Products remain in page? loop
 
     for item in productsAction:
-        try:
-            if target == position:
-                print(target)
-                # Edit products
 
-                target += 1
-                position += 1
-                setCurrentProduct(target)
+        if target == position:
+            print(target)
+            # Edit products
 
-                driver.execute_script("arguments[0].scrollIntoView(true);", item)
-                item.click()
+            target += 1
+            position += 1
+            setCurrentProduct(target)
 
-                product = products[i]
-                i +=1
-                ActionChains(driver).key_down(Keys.CONTROL).click(product).key_up(Keys.CONTROL).perform()
-                driver.switch_to.window(driver.window_handles[1])
+            handleError()
+            driver.execute_script("arguments[0].scrollIntoView(true);", item)
+            item.click()
+
+            product = products[i]
+            i +=1
+            ActionChains(driver).key_down(Keys.CONTROL).click(product).key_up(Keys.CONTROL).perform()
+            driver.switch_to.window(driver.window_handles[1])
+            handleError()
+            waitForPageLoad()
+
+            #Has variant? Loop
+            variantsAction = driver.find_elements('xpath','''//div[@id="variant_table"]/table/tbody/tr/td[last()]/div''')
+            variants = driver.find_elements('xpath','''//div[@id="variant_table"]/table/tbody/tr/td[last()]/div/ul/li[1]/a''')
+            j = 0
+            for variantItem in variantsAction:
+                handleError()
+
+                driver.execute_script("arguments[0].scrollIntoView(true);", variantItem)
+                variantItem.click()
+                variant = variants[j]
+                j += 1
+                ActionChains(driver).key_down(Keys.CONTROL).click(variant).key_up(Keys.CONTROL).perform()
+                driver.switch_to.window(driver.window_handles[2])
+                handleError()
                 waitForPageLoad()
 
-                #Has variant? Loop
-                variantsAction = driver.find_elements('xpath','''//div[@id="variant_table"]/table/tbody/tr/td[last()]/div''')
-                variants = driver.find_elements('xpath','''//div[@id="variant_table"]/table/tbody/tr/td[last()]/div/ul/li[1]/a''')
-                j = 0
-                for variantItem in variantsAction:
-                    try:
-                        driver.execute_script("arguments[0].scrollIntoView(true);", variantItem)
-                        variantItem.click()
-                        variant = variants[j]
-                        j += 1
-                        ActionChains(driver).key_down(Keys.CONTROL).click(variant).key_up(Keys.CONTROL).perform()
-                        driver.switch_to.window(driver.window_handles[2])
-                        waitForPageLoad()
+                #Edit Variant.
+                #time.sleep(3)
 
-                        #Edit Variant.
-                        #time.sleep(3)
-                        weightField = driver.find_element('xpath','''//input[@id="variant_weight"]''')
-                        saveButton = driver.find_element('xpath', '''//button[@id="var-form-save-btn"]''')
-                        driver.execute_script("arguments[0].scrollIntoView(true);", weightField)
-                        currentWeight = weightField.get_attribute('value')
+                weightField = driver.find_element('xpath','''//input[@id="variant_weight"]''')
+                saveButton = driver.find_element('xpath', '''//button[@id="var-form-save-btn"]''')
+                driver.execute_script("arguments[0].scrollIntoView(true);", weightField)
+                currentWeight = weightField.get_attribute('value')
 
-                        #Operations
-                        newWeight = operations(currentWeight)
-                        #time.sleep(2)
+                #Operations
+                newWeight = operations(currentWeight)
+                #time.sleep(2)
 
-                        weightField.clear()
-                       # time.sleep(2)
-                        weightField.send_keys(newWeight)
-                        #time.sleep(2)
-                        #saveButton.click()
-                        waitForPageLoad()
-                        time.sleep(3)
+                weightField.clear()
+               # time.sleep(2)
+                weightField.send_keys(newWeight)
+                #time.sleep(2)
+                #saveButton.click()
+                handleError()
+                waitForPageLoad()
+                time.sleep(3)
 
-
-
-                        driver.close()
-                        driver.switch_to.window(driver.window_handles[1])
-                    except Exception :
-                        print('variant miss')
 
 
                 driver.close()
-                driver.switch_to.window(driver.window_handles[0])
-            else:
-                position += 1
-                i += 1
-        except Exception:
-            print("product miss")
+                driver.switch_to.window(driver.window_handles[1])
+
+
+
+            driver.close()
+            driver.switch_to.window(driver.window_handles[0])
+        else:
+            position += 1
+            i += 1
+
 
     nextPage.click()
+    handleError()
     waitForPageLoad()
 
 
