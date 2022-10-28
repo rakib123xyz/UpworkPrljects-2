@@ -102,6 +102,13 @@ def setCurrentProduct(current):
         log.write(str(current))
 
 
+def handleError():
+    try:
+        menuSelector = driver.find_element('CSS_SELECTOR','#top_menu')
+    except:
+        driver.refresh()
+
+
 def moveToProducts(terget=0):
     terget = terget
     current = 0

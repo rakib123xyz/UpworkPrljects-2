@@ -24,7 +24,7 @@ user_agent = 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.2 (KHTML, like Gecko)
 chrome_options = webdriver.ChromeOptions()
 chrome_options.headless = False
 chrome_options.add_argument(f'user-agent={user_agent}')
-driver = webdriver.Chrome(chrome_options=chrome_options,executable_path="../../chromedriver.exe")
+driver = webdriver.Chrome(chrome_options=chrome_options,executable_path=r"C:\chromedriver\chromedriver.exe")
 
 userName = "Direct.mcgrocer@gmail.com"
 passWord = "MdRakiburIslam/1908/"
