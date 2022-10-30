@@ -66,11 +66,11 @@ def get_data(browser,url):
     browser.click_element(btn_next)
     
     print("Login successful")
-    time.sleep(3)
+    time.sleep(5)
     while True:
         try:
             #check logined? if not login. login again
-            input_username = browser.find_by_id("username")
+            input_username = browser.find_by_id(locator="username",)
             if input_username:
                 input_username.send_keys(username)
 
@@ -85,25 +85,32 @@ def get_data(browser,url):
                 btn_next = browser.find_by_id("signIn")
                 time.sleep(1)
                 browser.click_element(btn_next)
-                time.sleep(3)
+                time.sleep(5)
 
-            url_leads = "https://apps.vinmanager.com/vinconnect/#/CarDashboard/Pages/LeadManagement/ActiveLeadsLayout.aspx?SelectedTab=t_ILM&leftpaneframe=../LeadManagement/LeadBucket.aspx&rightpaneframe=HIDE"
+            url_leads = "https://apps.vinmanager.com/CarDashboard/Pages/LeadManagement/ActiveLeads_WorkList.aspx"
             browser.get_url(url_leads)
             time.sleep(1)
-            browser.switch_to_frame_by_id("cardashboardframe")
-            time.sleep(1)
-            browser.switch_to_frame_by_id("leftpaneframe")
-            time.sleep(5)
+            # browser.switch_to_frame_by_id("cardashboardframe")
+            #
+            # time.sleep(.5)
+            # browser.switch_to_frame_by_id("leftpaneframe")
+            #
+            # time.sleep(.5)
 
             #check data new lead
-            tbody_element = browser.find_elements_by_name('tbody')
+
+            tbody_element = browser.find_all_by_xpath(locator='//table[@id="ctl00_ContentPlaceHolder1LeadBucket_ctl00"]//tbody')
             if tbody_element :
-                tbody = tbody_element [1]
+                tbody = tbody_element[0]
                 trs = tbody.find_elements(By.TAG_NAME, "tr")
+
                 for tr in trs:
                     try:
+
                         tds = tr.find_elements(By.TAG_NAME, "td")
+
                         if "No leads to display" in tds[0].text:
+                            print("No leads to display")
                             break
                         if "This screen will auto-refresh every " in tr.text or "Customer Source" in tr.text:
                             continue
@@ -133,8 +140,11 @@ def get_data(browser,url):
                                     "","https://vinmanager.com",disc_hook)
                     except:
                         pass
+
+
         except:
             pass
+
         
         print("Time sleep to refresh")
         time.sleep(time_refresh)
@@ -142,7 +152,7 @@ def get_data(browser,url):
 def main():
     try:
         # Start browser
-        browser = WebBrowser(timeout = 10,isMaximum = False, isDisableImage = False,isHeadless = False)
+        browser = WebBrowser(timeout = 10,isMaximum = False, isDisableImage = False,isHeadless = False,)
         url = "https://apps.vinmanager.com/vinconnect"
         while True:        
             try:

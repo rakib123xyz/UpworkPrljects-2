@@ -8,12 +8,14 @@ __version__ = "1.0"
 __status__ = "Production"
 __author__ = "Sun (Phu Quy)"
 __email__ = "dangphuquybkhn@gmail.com"
+
 import socket
+
 hostname = socket.gethostname()
 if 'MD104' in hostname or 'MB2018' in hostname:
-    ISLOCAL=True
+    ISLOCAL = True
 else:
-    ISLOCAL=False
+    ISLOCAL = False
 
 from discord import Webhook, RequestsWebhookAdapter, Embed, Colour
 from datetime import datetime
@@ -24,8 +26,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, UnexpectedTagNameException
 import pickle
 import logging
 import sys
@@ -41,18 +44,20 @@ import config
 
 logger = logging.getLogger(__name__)
 
-#======================================= BEGIN WEB BROWSER ================================================
+
+# ======================================= BEGIN WEB BROWSER ================================================
 def read_text_file_to_list(filePath):
     ''' Read text file line by line to list '''
     if not os.path.isfile(filePath):
         logger.debug('File %s not found', filePath)
         return []
-    
+
     with open(filePath, encoding="utf-8-sig") as f:
         content = f.readlines()
     # you may also want to remove whitespace characters like `\n` at the end of each line
-    content = [x.strip() for x in content] 
+    content = [x.strip() for x in content]
     return content
+
 
 def notifyEmail(subject, message, toaddr):
     fromaddr = config.user_gmail
@@ -76,7 +81,7 @@ def notifyEmail(subject, message, toaddr):
         print(str(e))
 
 
-def send_discord_embed(title, url, price, thumbnail,site,disc_hook):
+def send_discord_embed(title, url, price, thumbnail, site, disc_hook):
     embed = Embed(title=title, colour=Colour(0x4ba4b),
                   url=site, description="NEW LEAD! " + '\n' + url,
                   timestamp=Embed.Empty)
@@ -84,21 +89,23 @@ def send_discord_embed(title, url, price, thumbnail,site,disc_hook):
     embed.set_footer(text="moon • " + str(datetime.now()),
                      icon_url="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/253px-FullMoon2010.jpg")
 
-    #embed.add_field(name="PRIS", value=price)
-    
+    # embed.add_field(name="PRIS", value=price)
+
     webhook = Webhook.from_url(disc_hook, adapter=RequestsWebhookAdapter())
     webhook.send(embed=embed)
 
+
 class WebBrowser():
     """Class web browser"""
-    def __init__(self, currentPath=None, driver = None, 
-        timeout = 10, isDisableImage = False, 
-        isDisableJavascript = False, downloadPath = None, 
-        isMaximum = False, isHeadless = False, 
-        proxyFilePath = None, changeProxyTotal=None, 
-        isMobile=False, mobileUserAgentFilePath=None,
-        userAgentFilePath=None, userDataDir=None
-        ):
+
+    def __init__(self, currentPath=None, driver=None,
+                 timeout=10, isDisableImage=False,
+                 isDisableJavascript=False, downloadPath=None,
+                 isMaximum=False, isHeadless=False,
+                 proxyFilePath=None, changeProxyTotal=None,
+                 isMobile=False, mobileUserAgentFilePath=None,
+                 userAgentFilePath=None, userDataDir=None
+                 ):
         if currentPath:
             self._currentPath = currentPath
         else:
@@ -124,7 +131,6 @@ class WebBrowser():
         self._userDataDir = userDataDir
         self.start()
 
-
     def get_downloaded_file_list(self):
         """get completed download list
         Returns:
@@ -132,7 +138,7 @@ class WebBrowser():
         """
         if not self._driver.current_url.startswith("chrome://downloads"):
             self._driver.get("chrome://downloads/")
-        
+
         return self._driver.execute_script("""
             var items = document.querySelector('downloads-manager')
                 .shadowRoot.getElementById('downloadsList').items;
@@ -142,30 +148,30 @@ class WebBrowser():
 
     def get_current_window(self):
         return self._driver.current_window_handle
-    
+
     def enable_headless_download(self):
         self._driver.command_executor._commands["send_command"] = ("POST", '/session/$sessionId/chromium/send_command')
-        params = {'cmd':'Page.setDownloadBehavior', 'params': {'behavior': 'allow', 'downloadPath': self._downloadPath}}
+        params = {'cmd': 'Page.setDownloadBehavior',
+                  'params': {'behavior': 'allow', 'downloadPath': self._downloadPath}}
         self._driver.execute("send_command", params)
-    
+
     def switch_2_window(self, window):
         self._driver.switch_to_window(window)
 
-    def is_page_loaded(self, windows =None):
+    def is_page_loaded(self, windows=None):
         # logger.info("Checking if {} page is loaded.".format(self._driver.current_url))
         try:
             page_state = self._driver.execute_script('return document.readyState;')
-            return page_state == 'complete'    
+            return page_state == 'complete'
         except:
             return False
-        
+
     def close_other_loaded_windows(self, window):
         for w in self._driver.window_handles:
             if w not in window:
                 self._driver.switch_to.window(w)
                 time.sleep(2)
                 while not self.is_page_loaded(w):
-                    
                     time.sleep(2)
                 self._driver.close()
         # switch to main window
@@ -187,15 +193,15 @@ class WebBrowser():
         cookies_dict = {}
         for cookie in cookies_list:
             cookies_dict[cookie['name']] = cookie['value']
-        
+
         return cookies_dict
 
     def clear_cookie(self):
         return self._driver.delete_all_cookies()
 
     def save_cookie(self, filePath):
-        pickle.dump( self._driver.get_cookies() , open(filePath,"wb"))
-    
+        pickle.dump(self._driver.get_cookies(), open(filePath, "wb"))
+
     def load_cookie(self, filePath):
         if os.path.isfile(filePath):
             cookies = pickle.load(open(filePath, "rb"))
@@ -206,8 +212,8 @@ class WebBrowser():
 
     def add_cookie(self, name, value):
         cookie = {
-            'name' : name, 
-            'value' : value
+            'name': name,
+            'value': value
         }
         self._driver.add_cookie(cookie)
 
@@ -216,7 +222,7 @@ class WebBrowser():
 
     def get_page_source(self):
         return self._driver.page_source
-    
+
     # By Index
     # By Name or Id
     # By Web Element
@@ -234,7 +240,7 @@ class WebBrowser():
             logger.info(' Not found : %s', name)
             logger.debug('%s', TimeoutException)
             return None
-        
+
     def switch_to_frame_by_id(self, name, timeout=None):
         ''' Get one item by xpath'''
         if not timeout:
@@ -244,12 +250,11 @@ class WebBrowser():
                 EC.presence_of_element_located((By.ID, name))
             )
             self._driver.switch_to.frame(element)
-            #return element
+            # return element
         except TimeoutException:
             logger.info(' Not found : %s', name)
             logger.debug('%s', TimeoutException)
-            #return None
-        
+            # return None
 
     def switch_to_lastest_window(self):
         # wait to make sure there are two windows open
@@ -262,7 +267,6 @@ class WebBrowser():
         self._driver.close()
         self._driver.switch_to_window(self._driver.window_handles[-1])
 
-    
     def find_visible_by_xpath(self, locator, timeout=None):
         ''' Get one item by xpath'''
         if not timeout:
@@ -273,11 +277,11 @@ class WebBrowser():
             )
             return element
         except TimeoutException:
-            #logger.info(' Find by xpath not found : %s', locator)
-            #logger.debug('%s', TimeoutException)
+            # logger.info(' Find by xpath not found : %s', locator)
+            # logger.debug('%s', TimeoutException)
             return None
-    
-    def find_elements_by_name(self, locator, timeout = None):
+
+    def find_elements_by_name(self, locator, timeout=None):
         ''' Get one item by xpath'''
         if not timeout:
             timeout = self._timeout
@@ -289,7 +293,7 @@ class WebBrowser():
             # logger.debug('%s', TimeoutException)
             return None
 
-    def find_by_xpath(self, locator, timeout = None):
+    def find_by_xpath(self, locator, timeout=None):
         ''' Get one item by xpath'''
         if not timeout:
             timeout = self._timeout
@@ -303,7 +307,7 @@ class WebBrowser():
             # logger.debug('%s', TimeoutException)
             return None
 
-    def find_by_xpath_from_element(self, sel, locator , timeout = None):
+    def find_by_xpath_from_element(self, sel, locator, timeout=None):
         ''' Get one item by xpath'''
         if not timeout:
             timeout = self._timeout
@@ -316,8 +320,8 @@ class WebBrowser():
             logger.info(' Find by xpath not found : %s', locator)
             logger.debug('%s', TimeoutException)
             return None
-    
-    def find_by_id(self, locator, timeout = None):
+
+    def find_by_id(self, locator, timeout=None):
         ''' Get one item by xpath'''
         if not timeout:
             timeout = self._timeout
@@ -331,7 +335,7 @@ class WebBrowser():
             logger.debug('%s', TimeoutException)
             return None
 
-    def find_all_by_css_from_element(self, sel, locator , timeout = None):
+    def find_all_by_css_from_element(self, sel, locator, timeout=None):
         ''' Get one item by xpath'''
         if not timeout:
             timeout = self._timeout
@@ -344,8 +348,8 @@ class WebBrowser():
             logger.info(' Find by css not found : %s', locator)
             logger.debug('%s', TimeoutException)
             return None
-    
-    def find_by_css_from_element(self, sel, locator , timeout = None):
+
+    def find_by_css_from_element(self, sel, locator, timeout=None):
         ''' Get one item by xpath'''
         if not timeout:
             timeout = self._timeout
@@ -359,43 +363,46 @@ class WebBrowser():
             logger.debug('%s', TimeoutException)
             return None
 
-    def find_all_by_xpath(self, locator, timeout = None):
+    def find_all_by_xpath(self, locator, timeout=None):
         ''' Get all items by xpath'''
         if not timeout:
             timeout = self._timeout
         try:
-            element = WebDriverWait(self._driver, timeout).until(EC.presence_of_all_elements_located((By.XPATH, locator)))
+            element = WebDriverWait(self._driver, timeout).until(
+                EC.presence_of_all_elements_located((By.XPATH, locator)))
             return element
         except TimeoutException:
             logger.info(' Find by xpath not found : %s', locator)
             logger.debug('%s', TimeoutException)
             return []
 
-    def find_by_class(self, classname, timeout = None):
+    def find_by_class(self, classname, timeout=None):
         ''' Get one item by class'''
         if not timeout:
             timeout = self._timeout
         try:
-            element = WebDriverWait(self._driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, classname)))
+            element = WebDriverWait(self._driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, classname)))
             return element
         except TimeoutException:
             logger.info(' Find by class not found : %s', classname)
             logger.debug('%s', TimeoutException)
             return None
-            
-    def find_all_by_class(self, classname, timeout = None):
+
+    def find_all_by_class(self, classname, timeout=None):
         ''' Get all item by class'''
         if not timeout:
             timeout = self._timeout
         try:
-            element = WebDriverWait(self._driver, timeout).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, classname)))
+            element = WebDriverWait(self._driver, timeout).until(
+                EC.presence_of_all_elements_located((By.CSS_SELECTOR, classname)))
             return element
         except TimeoutException:
             logger.info(' Find by class not found : %s', classname)
             logger.debug('%s', TimeoutException)
             return []
-    
-    def select_dropdown_by_text(self, locator, text_value, timeout = None):
+
+    def select_dropdown_by_text(self, locator, text_value, timeout=None):
         tag = self.find_by_xpath(locator)
         if tag:
             select = Select(tag)
@@ -403,12 +410,12 @@ class WebBrowser():
                 select.select_by_visible_text(text_value)
             except NoSuchElementException:
                 logger.info("Not found variant {}".format(text_value))
-            
+
         else:
             logger.info('Not found dropdown at xpath {}'.format(locator))
             return False
-    
-    def select_dropdown_by_value(self, locator, value, timeout = None):
+
+    def select_dropdown_by_value(self, locator, value, timeout=None):
         tag = self.find_by_xpath(locator)
         if tag:
             select = Select(tag)
@@ -416,12 +423,11 @@ class WebBrowser():
                 select.select_by_value(value)
             except NoSuchElementException:
                 logger.info("Not found variant {}".format(value))
-            
+
         else:
             logger.info('Not found dropdown at xpath {}'.format(locator))
-    
 
-    def is_exist_by_xpath(self, locator, timeout = None):
+    def is_exist_by_xpath(self, locator, timeout=None):
         ''' Check if xpath is exists'''
         if not timeout:
             timeout = self._timeout
@@ -431,8 +437,8 @@ class WebBrowser():
         except TimeoutException:
             return False
         return True
-    
-    def is_exist_by_css(self, locator, timeout = None):
+
+    def is_exist_by_css(self, locator, timeout=None):
         ''' Check if xpath is exists'''
         if not timeout:
             timeout = self._timeout
@@ -442,20 +448,19 @@ class WebBrowser():
         except TimeoutException:
             return False
         return True
-    
-    def wait_for_hide(self, locator, by='css', max_wait_time=20, timeout = 0.1):
+
+    def wait_for_hide(self, locator, by='css', max_wait_time=20, timeout=0.1):
         ''' Check if xpath is exists'''
-        counter = max_wait_time/timeout
-        while counter >0:
+        counter = max_wait_time / timeout
+        while counter > 0:
             try:
                 WebDriverWait(self._driver, timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, locator)))
                 logger.info('Waiting for element to hide: {}'.format(locator))
             except TimeoutException:
                 return True
-            
-            counter-=1
-    
-                    
+
+            counter -= 1
+
     def restart(self):
         ''' Restart the browser'''
         logger.info("Restart browser")
@@ -487,7 +492,7 @@ class WebBrowser():
             logger.info('Retry get url: {}'.format(url))
             time.sleep(2)
             self.restart()
-        
+
         return False
 
     def refresh(self):
@@ -495,7 +500,7 @@ class WebBrowser():
 
     def get_url(self, url):
         if self._changeProxyTotal:
-            self._changeProxyCounter+=1
+            self._changeProxyCounter += 1
             if self._changeProxyCounter > self._changeProxyTotal:
                 self.restart()
                 self._changeProxyCounter = 0
@@ -511,66 +516,63 @@ class WebBrowser():
                     # Skip this url
                     return False
                 self.get_url(url)
-            
+
             return True
         except:
             logger.info("Fail to get %s", url)
             print("Unexpected error:", sys.exc_info()[0])
             return False
-        
-        
-    
+
     def has_captcha(self):
         time.sleep(1)
         pagesource = self.get_page_source()
 
-        if 'Blocked IP Address' in pagesource\
-            or 'recaptcha-token' in pagesource\
-            or 'I am not a robot' in pagesource\
-            or 'not a robot' in pagesource\
-            or 'Enter the characters you see below' in pagesource\
-            or 'One more step' in pagesource\
-            or 'Sorry! Something went wrong on our end' in pagesource:
+        if 'Blocked IP Address' in pagesource \
+                or 'recaptcha-token' in pagesource \
+                or 'I am not a robot' in pagesource \
+                or 'not a robot' in pagesource \
+                or 'Enter the characters you see below' in pagesource \
+                or 'One more step' in pagesource \
+                or 'Sorry! Something went wrong on our end' in pagesource:
             logger.info("Has captcha")
             return True
         else:
             return False
-    
-    def executeJS(self,jsString, param=None):
+
+    def executeJS(self, jsString, param=None):
         logger.info("Execute script {}".format(jsString))
-        self._driver.execute_script(jsString,param)
+        self._driver.execute_script(jsString, param)
         time.sleep(1)
-    
+
     def scroll_bottom(self, wait_scroll=1, loading_xpath=None):
         logger.info("Scrolling down ... ")
         self._driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(wait_scroll)
         counter = 5
         while counter > 0:
-            counter-=1
+            counter -= 1
             if not self.is_exist_by_xpath(loading_xpath, 1):
                 break
 
-    def scroll_down(self, number = 10):
+    def scroll_down(self, number=10):
         for i in range(0, number):
             self._driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             time.sleep(1)
+
     def scroll_top(self):
         self._driver.execute_script("window.scrollTo(0, 0);")
         time.sleep(1)
-    
+
     # def scroll_top(self, width, height):
     #     self._driver.execute_script(f"window.scrollTo({width}, {height});")
     #     time.sleep(1)
-    
 
     def scroll_by(self, width, height):
         self._driver.execute_script(f"window.window.scrollBy({width}, {height});")
-        
+
         time.sleep(0.5)
-    
-    
-    def scroll_infinity(self, loading_xpath=None, iretry = 15, waiting_load=2):
+
+    def scroll_infinity(self, loading_xpath=None, iretry=15, waiting_load=2):
         # scroll infinity
         # define initial page height for 'while' loop
         last_height = self._driver.execute_script("return document.body.scrollHeight")
@@ -580,7 +582,7 @@ class WebBrowser():
         while True:
             self._driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             time.sleep(waiting_load)
-            
+
             new_height = self._driver.execute_script("return document.body.scrollHeight")
             if new_height == last_height:
                 retry -= 1
@@ -590,8 +592,7 @@ class WebBrowser():
                         if self.is_exist_by_xpath(loading_xpath, 5):
                             retry = iretry
                             continue
-                    
-                    
+
                     break
             else:
                 last_height = new_height
@@ -599,20 +600,19 @@ class WebBrowser():
                 logger.info("Scroll down page: %d", page)
                 retry = iretry
 
-    def click_on_fly(self, element, x_offset = 10, y_offset=10, moveTimeout=1):
+    def click_on_fly(self, element, x_offset=10, y_offset=10, moveTimeout=1):
         ''' Click coordiate'''
         try:
             hover = ActionChains(self._driver).move_to_element(element).move_by_offset(x_offset, y_offset).click()
             hover.perform()
         except:
             logger.info('Fail to click on an element')
-        
-    
-    def move_slider(self, element, x_offset = 10, y_offset=0, moveTimeout=1):
+
+    def move_slider(self, element, x_offset=10, y_offset=0, moveTimeout=1):
         ''' Click coordiate'''
         hover = ActionChains(self._driver).move_to_element(element).move_by_offset(x_offset, y_offset).click()
         hover.perform()
-    
+
     def dismiss_alert(self):
         try:
             WebDriverWait(self._driver, 2).until(EC.alert_is_present())
@@ -620,7 +620,7 @@ class WebBrowser():
             return True
         except TimeoutException:
             return False
-        
+
     # def get_screenshot_by_xpath(self, xpath, result_path):
     #     element = self.find_by_xpath(xpath)
     #     if not element:
@@ -642,7 +642,7 @@ class WebBrowser():
     #     # Delete temp image
     #     if os.path.isfile('temp.png'):
     #         os.remove('temp.png')
-            
+
     #     return result_path
     def scroll_into_view(self, element):
         self._driver.execute_script("arguments[0].scrollIntoView();", element)
@@ -666,7 +666,7 @@ class WebBrowser():
         except Exception as ex:
             logger.info("Can't click element")
             return False
-    
+
     def click_element_to_new_tab(self, element, moveTimeout=3):
         try:
             ''' Click an element'''
@@ -674,7 +674,7 @@ class WebBrowser():
             actions.move_to_element(element)
             actions.perform()
             time.sleep(moveTimeout)
-            
+
             if os.name == 'posix':
                 actions.key_down(Keys.COMMAND, element).click(element).key_up(Keys.COMMAND, element)
             else:
@@ -693,7 +693,7 @@ class WebBrowser():
 
     def get_plugin(self, proxy_host, proxy_port, proxy_user, proxy_pass):
         logger.info('set proxy {}:{} with username {}'.format(proxy_host, proxy_port, proxy_user))
-        
+
         manifest_json = """
         {
             "version": "1.0.0",
@@ -750,7 +750,7 @@ class WebBrowser():
         with zipfile.ZipFile(pluginfile, 'w') as zp:
             zp.writestr("manifest.json", manifest_json)
             zp.writestr("background.js", background_js)
-        
+
         return pluginfile
 
     def start(self):
@@ -762,7 +762,7 @@ class WebBrowser():
         # If have proxy path then config proxy
         if self._proxyFilePath:
             proxies = read_text_file_to_list(self._proxyFilePath)
-            
+
             proxy_with_password = []
             # READ PROXY
             for proxy in proxies:
@@ -776,8 +776,8 @@ class WebBrowser():
                         'proxy_user': username,
                         'proxy_pass': password,
                     })
-            
-            # if proxy with password 
+
+            # if proxy with password
             if proxy_with_password:
                 randomIp = random.choice(proxy_with_password)
                 self._currentProxyIp = randomIp['proxy_host']
@@ -791,14 +791,13 @@ class WebBrowser():
         if self._isHeadLess:
             logger.info('Start browser in headless mode')
             chromeOptions.add_argument("--headless")
-            chromeOptions.add_argument("--disable-gpu") 
+            chromeOptions.add_argument("--disable-gpu")
 
         if ISLOCAL:
             chromeOptions.add_extension("chropath.zip")
             chromeOptions.add_extension("edit_this_cookie.zip")
 
-        
-        #chromeOptions.add_argument('--disable-extensions')
+        # chromeOptions.add_argument('--disable-extensions')
         # chromeOptions.add_argument('--profile-directory=Default'
         # chromeOptions.add_argument("--incognito")
         # chromeOptions.add_argument("--disable-plugins-discovery");
@@ -819,7 +818,7 @@ class WebBrowser():
             user_agent = random.choice(ua_list)
         else:
             user_agent = random.choice(USER_AGENT_LIST)
-        
+
         logger.info('User-agent: {}'.format(user_agent))
         chromeOptions.add_argument('user-agent={}'.format(user_agent))
 
@@ -828,21 +827,20 @@ class WebBrowser():
 
         if self._userDataDir:
             chromeOptions.add_argument("user-data-dir=" + self._userDataDir)
-        
-        if(self._isMaximum):
+
+        if (self._isMaximum):
             chromeOptions.add_argument("start-maximized")
-        
-        prefs = { "profile.default_content_setting_values.notifications": 2 }
+
+        prefs = {"profile.default_content_setting_values.notifications": 2}
         prefs = {"credentials_enable_service", False}
-        prefs = {"profile.password_manager_enabled" : False}
-        
+        prefs = {"profile.password_manager_enabled": False}
+
         if self._isDisableImage:
             prefs["profile.managed_default_content_settings.images"] = 2
 
         if self._isDisableJavascript:
             prefs["profile.managed_default_content_settings.javascript"] = 2
-        
-        
+
         prefs['plugins'] = {'plugins_disabled': ['Chrome PDF Viewer']}
 
         # prefs['download'] = {'default_directory': self._downloadPath, "directory_upgrade": True}
@@ -851,8 +849,8 @@ class WebBrowser():
         prefs["download.directory_upgrade"] = True
         prefs["safebrowsing_for_trusted_sources_enabled"] = False
         prefs["safebrowsing.enabled"] = False
-        
-        chromeOptions.add_experimental_option("prefs",prefs)
+
+        chromeOptions.add_experimental_option("prefs", prefs)
         # chromeOptions.add_experimental_option("excludeSwitches", ["enable-automation"])
         chromeOptions.add_experimental_option('useAutomationExtension', False)
         # chromeOptions.add_experimental_option("excludeSwitches", ["ignore-certificate-errors", "safebrowsing-disable-download-protection", "safebrowsing-disable-auto-update", "disable-client-side-phishing-detection"])
@@ -860,63 +858,57 @@ class WebBrowser():
         chromedriver = ''
         if os.name == 'posix':
             if self._currentPath:
-                chromedriver=os.path.join(self._currentPath,"chromedriver")
-            
+                chromedriver = os.path.join(self._currentPath, "chromedriver")
+
             if not os.path.isfile(chromedriver):
-                chromedriver='chromedriver'
+                chromedriver = 'chromedriver'
         else:
             if self._currentPath:
-                chromedriver=os.path.join(self._currentPath, "chromedriver.exe")
-            
+                chromedriver = os.path.join(self._currentPath, "chromedriver.exe")
+
             if not os.path.isfile(chromedriver):
-                chromedriver='chromedriver.exe'
-        
+                chromedriver = 'chromedriver.exe'
+
         if self._isMobile:
             if self._mobileUserAgentFilePath:
                 mobile_agents = read_text_file_to_list(self._mobileUserAgentFilePath)
                 random_agent = random.choice(mobile_agents)
             else:
                 random_agent = random.choice(MOBILE_USER_AGENT_LIST)
-            
+
             logger.info('Mobile User-agent: {}'.format(random_agent))
             mobile_emulation = {
-                "deviceMetrics": 
-                    { 
-                        "width": 414, 
-                        "height": 816, 
-                        "pixelRatio": 3.0 
+                "deviceMetrics":
+                    {
+                        "width": 414,
+                        "height": 816,
+                        "pixelRatio": 3.0
                     },
-                "userAgent":  random_agent
-                }
-            
+                "userAgent": random_agent
+            }
+
             chromeOptions.add_experimental_option("mobileEmulation", mobile_emulation)
-
-
-        
 
         # self._driver = webdriver.Chrome(executable_path=chromedriver, chrome_options=chromeOptions,desired_capabilities=desired_cap)
         self._driver = webdriver.Chrome(executable_path=chromedriver, chrome_options=chromeOptions)
 
         # self._driver.delete_all_cookies()
-        
+
         if self._isMobile:
-            self._driver.set_window_size(414,816)
+            self._driver.set_window_size(414, 816)
 
         # self._driver.set_page_load_timeout(60)
-        
-
 
         # window_size = self._driver.execute_script("""
         # return [window.outerWidth - window.innerWidth + arguments[0],
         #   window.outerHeight - window.innerHeight + arguments[1]];
         # """, 1024, 600)
         # self._driver.set_window_size(*window_size)
-        
-        #driver.set_window_position(-10000,0)
+
+        # driver.set_window_position(-10000,0)
         # self._driver.switch_to_window(self._driver.current_window_handle)
 
-
-    def try_click(self, element, num = 10):
+    def try_click(self, element, num=10):
         ''' Try to click an element'''
         is_clicked = False
         step = 0
@@ -924,16 +916,15 @@ class WebBrowser():
             try:
                 is_clicked = self.click_element(element, 5)
                 is_clicked = True
-            except: 
+            except:
                 time.sleep(1)
                 logger.info("try click %s", element)
                 is_clicked = False
-            step+=1
-        
+            step += 1
+
         return is_clicked
 
-    
-    def try_click_by_xpath(self, locator, num = 10):
+    def try_click_by_xpath(self, locator, num=10):
         ''' Try to click an element'''
         is_clicked = False
         retry = num
@@ -941,16 +932,16 @@ class WebBrowser():
             num -= 1
             element = self.find_by_xpath(locator)
             if element:
-                is_clicked = self.click_element(element, moveTimeout=retry-num)
+                is_clicked = self.click_element(element, moveTimeout=retry - num)
                 if is_clicked:
                     return True
-            # Else try click again    
+            # Else try click again
             time.sleep(1)
             logger.info("try click {} x {}".format(num, locator))
-        
+
         return is_clicked
-    
-    def try_click_by_css(self, locator, num = 10):
+
+    def try_click_by_css(self, locator, num=10):
         ''' Try to click an element'''
         is_clicked = False
         retry = num
@@ -958,21 +949,20 @@ class WebBrowser():
             num -= 1
             element = self.find_by_class(locator)
             if element:
-                is_clicked = self.click_element(element, moveTimeout=retry-num)
+                is_clicked = self.click_element(element, moveTimeout=retry - num)
                 if is_clicked:
                     return True
-            # Else try click again    
+            # Else try click again
             time.sleep(1)
             logger.info("try click {} x {}".format(num, locator))
-        
+
         return is_clicked
 
 
+# ======================================= END WEB BROWSER ================================================
 
-#======================================= END WEB BROWSER ================================================
 
-
-MOBILE_USER_AGENT_LIST =[
+MOBILE_USER_AGENT_LIST = [
     'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
     'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1',
     'Outlook-iOS/709.2189947.prod.iphone (3.24.0)',
