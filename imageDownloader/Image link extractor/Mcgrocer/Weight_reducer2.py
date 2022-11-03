@@ -20,8 +20,8 @@ from selenium.common import exceptions
 
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
-
-
+from Operations import operations
+import Operations
 
 
 
@@ -64,8 +64,8 @@ def main():
     driver = webdriver.Chrome(chrome_options=chrome_options, executable_path="../../../chromedriver.exe")
     driver.set_page_load_timeout(30)
 
-    userName = "hb.mcgrocer@gmail.com"
-    passWord = "rakib123xyz"
+    userName = Operations.userName
+    passWord = Operations.passWord
     loginPageUrl = "https://seller.mcgrocer.com/index.php?p=login"
     productsPage = "https://seller.mcgrocer.com/index.php?p=product"
 
@@ -105,20 +105,20 @@ def main():
             except Exception:
                 pass
 
-    def operations(currentWeight):
-        currentWeight = float(currentWeight)
-
-        if currentWeight <= .99:
-            return 1
-        elif currentWeight >= 1 and currentWeight < 1.99:
-            return currentWeight
-        elif currentWeight >= 2 and currentWeight < 3.99:
-            return currentWeight - 1
-        else:
-            return currentWeight - 2
+    # def operations(currentWeight):
+    #     currentWeight = float(currentWeight)
+    #
+    #     if currentWeight <= .99:
+    #         return 1
+    #     elif currentWeight >= 1 and currentWeight < 1.99:
+    #         return currentWeight
+    #     elif currentWeight >= 2 and currentWeight < 3.99:
+    #         return currentWeight - 1
+    #     else:
+    #         return currentWeight - 2
 
     def getCurrentProduct():
-        with open('currentPositionLog3.txt', mode='a+') as log:
+        with open('currentPositionLog2.txt', mode='a+') as log:
             log.seek(0)
             target = log.read()
             if target == "":
@@ -128,7 +128,7 @@ def main():
             return int(target)
 
     def setCurrentProduct(current):
-        with open('currentPositionLog3.txt', mode='w') as log:
+        with open('currentPositionLog2.txt', mode='w') as log:
             log.write(str(current))
 
 
@@ -158,25 +158,25 @@ def main():
 
         loginToProductsPanel(userName, passWord, loginPageUrl)
         baseUrl = "https://seller.mcgrocer.com/index.php?p=add_product&pid="
-        with open('currentPositionLog2.txt', mode="r") as f:
-            ids = list(set(f.readlines()))
+        with open('Id_list2.txt', mode="r") as f:
+            ids = sorted(list(set(f.readlines())))
 
 
             index = 0
             for id in ids:
                 index += 1
-                print(index)
+                print("Index : " + str(index))
 
                 target = getCurrentProduct()
-                print(target)
-                print(id)
+
+                print("Id : " + str(id))
 
                 editUrl = baseUrl + str(id)
 
 
 
                 if int(id)==int(target) or target == 0  :
-                    print("start")
+
 
 
                     #Prssesing goes here
@@ -210,22 +210,24 @@ def main():
 
                         # Operations
                         newWeight = operations(currentWeight)
-                        #time.sleep(1)
+                        #time.sleep(4)
 
                         weightField.clear()
-                        # time.sleep(2)
+                        #time.sleep(2)
                         weightField.send_keys(newWeight)
-                        # time.sleep(2)
-                        #saveButton.click()
+                        #time.sleep(2)
+                        if Operations.save == True:
+                            saveButton.click()
                         setCurrentProduct(ids[index])
                         #time.sleep(3)
                         handleError()
                         waitForPageLoad()
-                        # time.sleep(3)
+                        time.sleep(3)
 
                         driver.close()
                         driver.switch_to.window(driver.window_handles[0])
     except exceptions.TimeoutException:
+        driver.quit()
         main()
     except Exception:
         print("Stoped")
