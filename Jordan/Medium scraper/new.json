@@ -1,0 +1,2575 @@
+
+[
+  {
+    "data": {
+      "post": {
+        "id": "537173469458",
+        "viewerEdge": {
+          "id": "postId:537173469458-viewerId:lo_f369fe940f88",
+          "fullContent": {
+            "isLockedPreviewOnly": false,
+            "validatedShareKey": "",
+            "bodyModel": {
+              "sections": [
+                {
+                  "name": "f02d",
+                  "startIndex": 0,
+                  "textLayout": null,
+                  "imageLayout": null,
+                  "backgroundImage": null,
+                  "videoLayout": null,
+                  "backgroundVideo": null,
+                  "__typename": "Section"
+                }
+              ],
+              "paragraphs": [
+                {
+                  "id": "3d8b257f7b51_0",
+                  "name": "4af3",
+                  "type": "H3",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Rich Media Ads: Basic and Beyond",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_1",
+                  "name": "7af3",
+                  "type": "H4",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "This article covers the basics of what Rich media ads are and goes into the advance technical working and implementation of Rich Media Ads.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_2",
+                  "name": "3616",
+                  "type": "IMG",
+                  "href": null,
+                  "layout": "INSET_CENTER",
+                  "metadata": {
+                    "id": "1*TntWpTUN-A1U7CLWgrGOKQ.gif",
+                    "originalHeight": 229,
+                    "originalWidth": 500,
+                    "focusPercentX": null,
+                    "focusPercentY": null,
+                    "alt": null,
+                    "__typename": "ImageMetadata"
+                  },
+                  "text": "copyright free",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_3",
+                  "name": "57c4",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "This article is divided into two parts.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_4",
+                  "name": "05db",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Basic: In the first part, we will cover rich media Ads and their different types. And briefly touch upon the benefits. This is targeted to anyone completely new to digital ads.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 6,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    },
+                    {
+                      "type": "EM",
+                      "start": 0,
+                      "end": 6,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_5",
+                  "name": "2265",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "And Beyond: In the second part, we will cover a few of the protocols or standards defined by the IAB (Interactive Advertising Bureau). This part requires some basic knowledge of the advertising industry and technical terms.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 11,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    },
+                    {
+                      "type": "EM",
+                      "start": 0,
+                      "end": 11,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_6",
+                  "name": "5f1a",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Both parts are independent of each other. So, one can do selective reading.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_7",
+                  "name": "94f9",
+                  "type": "H3",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Rich Media Ads: Basics",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 22,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_8",
+                  "name": "9887",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "In the current world, anyone will rarely be unknown to the advertising industry. But for the sake of completeness — advertising is divided into two broad segments — print and Digital. Digital ads are the ones displayed on laptops, phones, tablets, etc. Rich Media Ads are a sub-category of Digital Ads.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_9",
+                  "name": "0674",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "What Are Rich Media Ads",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 23,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_10",
+                  "name": "0524",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Google defines Rich Media Ads as “an ad that includes advanced features like video, audio, or other elements that encourage viewers to interact and engage with the content.”* You must have seen ads on the web pages or mobile in video format, or the one which expands on clicking. All those are examples of rich media ads. As must be evident, this provides much more possibilities for an advertiser to interact with and engage the end-users.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "EM",
+                      "start": 33,
+                      "end": 175,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_11",
+                  "name": "c67e",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Let’s see a few different types of Rich Media Ads. It will give more clarity on their usefulness.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_12",
+                  "name": "c900",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Types of Rich Media Ads",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 23,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_13",
+                  "name": "046e",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "1. Banner Ads: In general, Banner ads are usually fixed and most commonly found on web pages at the top (header). Rich Media banner ads are nothing but traditional banner ads with interactive and rich media content such as videos. It can include “polite loading” technology.",
+                  "hasDropCap": true,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 14,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_14",
+                  "name": "d954",
+                  "type": "BQ",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Polite Loading: Polite loading delays the loading of creative assets (like images, videos) until the parent page has finished loading. Till the page is loading, one can display a default ‘polite image’. Once the page is loaded, display the creatives. One can use JavaScript to achieve the same.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 15,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_15",
+                  "name": "6bd6",
+                  "type": "IMG",
+                  "href": null,
+                  "layout": "INSET_CENTER",
+                  "metadata": {
+                    "id": "1*TicYp_lM6ulJbp3aOVs4Sg.gif",
+                    "originalHeight": 289,
+                    "originalWidth": 600,
+                    "focusPercentX": null,
+                    "focusPercentY": null,
+                    "alt": null,
+                    "__typename": "ImageMetadata"
+                  },
+                  "text": "Banner Ads (Free to use)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 10,
+                      "href": "https://support.google.com/richmedia/answer/2417545?hl=en&ref_topic=2417414&visit_id=637647185059651044-3014223390&rd=1#zippy=%2Cvideo%2Cvpaid%2Cbanner%2Cexpanding",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_16",
+                  "name": "c93b",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "2. Expanding: These are the banner ads that expand beyond their original dimension. Expansion can happen due to user interaction (for example, by click, tap, or mouse-over) or automatically when the page loads (auto-expand). By default, these ads expand over the page or app content.",
+                  "hasDropCap": true,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 14,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_17",
+                  "name": "6d9c",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "There are different types of Expanding Ads:",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_18",
+                  "name": "a891",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "· Lightbox: Google describes it as “Lightbox is a premium brand format for the Google Display Network. Lightbox is an expanding creative that works on both desktop and mobile. On desktop computers, a two-second mouseover expands the Lightbox. On mobile devices, you tap to expand. When expanded, the Lightbox takes over most of the available screen space — to feature brand content, including videos, maps, games, and more.”",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 2,
+                      "end": 12,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    },
+                    {
+                      "type": "EM",
+                      "start": 35,
+                      "end": 424,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_19",
+                  "name": "d231",
+                  "type": "IMG",
+                  "href": null,
+                  "layout": "INSET_CENTER",
+                  "metadata": {
+                    "id": "1*KRcU3iMEpG3t64oX2jPciQ.gif",
+                    "originalHeight": 573,
+                    "originalWidth": 840,
+                    "focusPercentX": null,
+                    "focusPercentY": null,
+                    "alt": null,
+                    "__typename": "ImageMetadata"
+                  },
+                  "text": "Lightbox (Free to use)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 9,
+                      "href": "https://support.google.com/richmedia/answer/2417545?hl=en&ref_topic=2417414&visit_id=637647185059651044-3014223390&rd=1#zippy=%2Cvideo%2Cvpaid%2Cbanner%2Cexpanding",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_20",
+                  "name": "18d9",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "· Multi-directional expanding (MDE): This type of Ad can expand in any direction. These Ads detect the Ad placement location on the page — left or right, and then expand accordingly. If it’s placed on the left-hand side then the Ad will expand towards the right. The same Ad, if placed on the right side, will expand towards the left. Isn’t it great! Earlier, the designer had to create multiple versions of the same Ads for different locations.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 2,
+                      "end": 36,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_21",
+                  "name": "9ecb",
+                  "type": "IMG",
+                  "href": null,
+                  "layout": "INSET_CENTER",
+                  "metadata": {
+                    "id": "1*2_ljhSfDTa0oWGCFwziIgQ.png",
+                    "originalHeight": 221,
+                    "originalWidth": 517,
+                    "focusPercentX": null,
+                    "focusPercentY": null,
+                    "alt": null,
+                    "__typename": "ImageMetadata"
+                  },
+                  "text": "Multi-directional Expanding (Free to use)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 27,
+                      "href": "https://support.google.com/richmedia/answer/2417545?hl=en&ref_topic=2417414&visit_id=637647185059651044-3014223390&rd=1#zippy=%2Cvideo%2Cvpaid%2Cbanner%2Cexpanding",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_22",
+                  "name": "42f1",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "· Push-down: It’s the same as the basic expanding RMAs but when it expands it pushes down the content of the page or app below. It doesn’t expand over the content. The main advantage of this ad is that it does not hide the content of the webpage and, therefore, generates more ad views",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 2,
+                      "end": 12,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_23",
+                  "name": "3426",
+                  "type": "IMG",
+                  "href": null,
+                  "layout": "INSET_CENTER",
+                  "metadata": {
+                    "id": "1*v3HukSFd4tTP24eKw3AIxg.gif",
+                    "originalHeight": 328,
+                    "originalWidth": 600,
+                    "focusPercentX": null,
+                    "focusPercentY": null,
+                    "alt": null,
+                    "__typename": "ImageMetadata"
+                  },
+                  "text": "Push Down Ads (Free to use)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 14,
+                      "href": "https://support.google.com/richmedia/answer/2417545?hl=en&ref_topic=2417414&visit_id=637647185059651044-3014223390&rd=1#zippy=%2Cvideo%2Cvpaid%2Cbanner%2Cexpanding",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_24",
+                  "name": "d11f",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "3. Interstitials: RMAs that float on top of the page’s content. or appears as a full-screen ad during the transition in the mobile apps or games. They can move with content or maintain a locked position as a user scrolls. The “Locked” option is enabled at the trafficking stage.",
+                  "hasDropCap": true,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 16,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_25",
+                  "name": "d3cb",
+                  "type": "IMG",
+                  "href": null,
+                  "layout": "INSET_CENTER",
+                  "metadata": {
+                    "id": "1*Ohot1vps7UiP68adzQuGOQ.gif",
+                    "originalHeight": 397,
+                    "originalWidth": 600,
+                    "focusPercentX": null,
+                    "focusPercentY": null,
+                    "alt": null,
+                    "__typename": "ImageMetadata"
+                  },
+                  "text": "Interstitials (Free to use)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 13,
+                      "href": "https://support.google.com/richmedia/answer/2417545?hl=en&ref_topic=2417414&visit_id=637647185059651044-3014223390&rd=1#zippy=%2Cvideo%2Cvpaid%2Cbanner%2Cexpanding",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_26",
+                  "name": "bef3",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Benefits:",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 9,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_27",
+                  "name": "7afc",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "It has been proved in many studies that Rich Media Ads have a greater interaction rate, as well as, CTRs.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_28",
+                  "name": "15a9",
+                  "type": "BQ",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "CTRs: Click Through Rate is the ratio of users who click on a specific ad to the number of total users who view the advertisement.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 130,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_29",
+                  "name": "9412",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "It also gives a larger space for the advertiser to interact with the user. In traditional digital ads, the scope is very limited. But with RMAs, one has so much creative freedom.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_30",
+                  "name": "e3c1",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "In addition to these, it also provides better metrics tracking. Which can be used by Publishers in making strategic decisions. Metrics such as — when a user paused an ad video, when it was closed, when it was muted, how many times the ad was expanded, etc. can be easily tracked with the RMAs.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_31",
+                  "name": "e04e",
+                  "type": "H3",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "And Beyond…",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_32",
+                  "name": "2c04",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "The Rich Media Ads are typically created and displayed using HTML5 or JavaScript. They have to comply with and/or utilize the various protocols or standards defined by IAB. A few of the most fundamentals and popular ones are:",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_33",
+                  "name": "887a",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "VAST (for video Ads)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 20,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    },
+                    {
+                      "type": "EM",
+                      "start": 0,
+                      "end": 20,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_34",
+                  "name": "f33c",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "VMAP (for video ads)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 20,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    },
+                    {
+                      "type": "EM",
+                      "start": 0,
+                      "end": 20,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_35",
+                  "name": "a886",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "MRAID (for mobile MRAs)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 23,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    },
+                    {
+                      "type": "EM",
+                      "start": 0,
+                      "end": 23,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_36",
+                  "name": "454a",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "VPAID (but now deprecated and replaced by SIMID/OMID)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 53,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    },
+                    {
+                      "type": "EM",
+                      "start": 0,
+                      "end": 53,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_37",
+                  "name": "4abe",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "We will try to take a quick look into the top 3 to understand what are they and how they work. Please note — IAB has detailed manuals for each which spans hundreds of pages if not thousands. So, it’s not possible to cover each and every aspect of these protocols/standards. But we will surely cover enough that we understand the working and can explain to someone else too.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_38",
+                  "name": "b78b",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "VAST: Video Ad Serving Template",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 31,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_39",
+                  "name": "61fa",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "IAB’s official definition is “The Video Ad Serving Template is an XML response framework that enables a consistent delivery format for ad across streaming video and audio platforms.” It sounds good but what does this mean!",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "EM",
+                      "start": 29,
+                      "end": 183,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_40",
+                  "name": "b68b",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Let’s take a step back. When we watch a video on a web page. The control we use to play, pause, or forward the video is all part of a video player. Digital video ads are called by the video player from the third-party ad server. The Ads are then inserted into the content stream of the video player. Seamless integration among the video player, ad, and the ad server is critical for a smooth end-user experience. Before VAST came in, the ads had to be custom programmed for the requirements of the different video players. If an advertiser wants to scale the campaign (display on various video players/places). That is a considerable investment and poor ROI. To resolve this issue IAB came up with VAST — a common video ad serving template.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_41",
+                  "name": "f141",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "VAST offers a set of instructions for developers on how to program their (video)players to process VAST-formatted ads. Using VAST, ad servers can serve ads to any VAST-compliant player regardless of what code the player uses.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_42",
+                  "name": "fbeb",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "VAST Ad Serving and Tracking",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 28,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_43",
+                  "name": "8f9e",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "There are two approaches:",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_44",
+                  "name": "205a",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Client-Side Ad Serving",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "EM",
+                      "start": 0,
+                      "end": 22,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_45",
+                  "name": "80e9",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Server-Side Ad-Stitching",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "EM",
+                      "start": 0,
+                      "end": 24,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_46",
+                  "name": "853a",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Client-Side Ad Serving:",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_47",
+                  "name": "6eea",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Vast is means of sending ad details to the video player.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_48",
+                  "name": "4b0e",
+                  "type": "IMG",
+                  "href": null,
+                  "layout": "INSET_CENTER",
+                  "metadata": {
+                    "id": "1*BLN45TWoJ1gIdMq2O7RmJA.png",
+                    "originalHeight": 447,
+                    "originalWidth": 975,
+                    "focusPercentX": null,
+                    "focusPercentY": null,
+                    "alt": null,
+                    "__typename": "ImageMetadata"
+                  },
+                  "text": "Client-Side Ad-Serving ( Free for Educational Purpose)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 22,
+                      "href": "https://iabtechlab.com/wp-content/uploads/2018/11/VAST4.1-final-Nov-8-2018.pdf",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_49",
+                  "name": "9cec",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Before (pre-roll), in the middle of (mid-roll), or after (post-roll), the player reaches a cue to insert an ad. It makes an HTTP request to the primary AdServer for the Ad. This might be the publisher’s ad server or SSP. If you don’t know SSP or AdServers please refer to my previous article — Link.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_50",
+                  "name": "af5b",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "· Pre-Roll: is the ad displayed before the video starts. When you go to the Youtube — ad shown before the video starts is Pre-Roll.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_51",
+                  "name": "dfcf",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "· Mid-Roll: This is the Ad shown in the middle of the video.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_52",
+                  "name": "a9e6",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "· Post Roll: This is the Ad shown once the video has ended.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_53",
+                  "name": "cf13",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "If the AdServer can cater the Ad request then it sends an inline response else it sends out a wrapper response.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_54",
+                  "name": "ba16",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "IF wrapper response is received from the AdServer, the player makes another VAST request to another AdServer.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_55",
+                  "name": "c3dd",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Let’s say this time AdServer has an ad. AdServer sends out an inline response.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_56",
+                  "name": "da19",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "The video player receives the inline response and executes the VAST response.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_57",
+                  "name": "1999",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "At key points during ad playback, tracking information is sent for both the InLine and Wrapper responses that the player received. In traditional client-side ad serving, cookies are used to track ads and the computers on which they play.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_58",
+                  "name": "b4bd",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Server-Side Ad Stitching",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 24,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_59",
+                  "name": "7492",
+                  "type": "IMG",
+                  "href": null,
+                  "layout": "INSET_CENTER",
+                  "metadata": {
+                    "id": "1*PhRsY0qb2_gm1r6e4opXAA.png",
+                    "originalHeight": 465,
+                    "originalWidth": 975,
+                    "focusPercentX": null,
+                    "focusPercentY": null,
+                    "alt": null,
+                    "__typename": "ImageMetadata"
+                  },
+                  "text": "Server-Side ( Free for Educational Purpose)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 12,
+                      "href": "https://iabtechlab.com/wp-content/uploads/2018/11/VAST4.1-final-Nov-8-2018.pdf",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_60",
+                  "name": "8198",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "In today’s world, with so many streaming video players, it might be too much for a player to send dynamic ad requests and track information. This led to the growth of a new entity or service known as Ad Stitching.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_61",
+                  "name": "9188",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Ad Stitching Service: is an intermediatory server. Its job is to receive ads from the adserver and insert the ad in the content dynamically. This is also called Stream stitching, Ad Insertions, etc.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_62",
+                  "name": "cac1",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Let’s go step by step.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_63",
+                  "name": "8d38",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "The publisher sends an ad request to Ad Stitching Service.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_64",
+                  "name": "de1b",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Ad-Stitching service makes an ad request to the AdServer.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_65",
+                  "name": "77a6",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "The AdServer sends a VAST Tag with a mezzanine file and ready-to-serve file. If the ad stitching service has already received the creative for a previous request and has transcoded the mezzanine file. Or the ready-to-serve files are already in the format required to be stitched into the content stream — Go to step 5. If the VASt tag is a wrapper response. Then the request will go to the next AdServer as we saw in client-side ad-serving.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_66",
+                  "name": "104f",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "The ad-stitching service pulls the unique creative identifier from the VAST tag. If the creative has never been used in the system, the mezzanine file is extracted and transcoded. In this scenario, the ad is skipped and the next available ad is played instead. VAST error code 407 is sent.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_67",
+                  "name": "bd2d",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Then the Ad-Stitching service selects the pre-transcoded file present in the system.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_68",
+                  "name": "0bdf",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "The ad-stitching service stitches the ad into the content stream and serves the content and ad to the player in one continuous stream.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_69",
+                  "name": "b27a",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "When an ad-stitching service is involved, the ad-stitching server may send tracking on the player’s behalf. This server-to-server tracking process is problematic because all the tracking is coming from one IP address (of Ad-Stitching Server). To an ad server that is receiving the tracking information, the reports look similar to invalid traffic. And the ad-stitching service cannot access cookies used in traditional client-side tracking. For the ad stitching service in situations where the client cannot count impressions, an impression could be reported as the ad is sent on the stitched stream and therefore be as close as possible to the opportunity to play.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_70",
+                  "name": "6c3c",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "I hope, we got the clarity on the VAST. Now, let’s see VMAP. Don’t worry this is not as detailed as the VAST.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_71",
+                  "name": "b493",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "VMAP: Video Multiple Ad Playlist",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 32,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_72",
+                  "name": "0ecd",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "IAB definition “Enables a structure for a playlist of videos ads sent from an adserver to a video player.”",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "EM",
+                      "start": 15,
+                      "end": 106,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_73",
+                  "name": "681d",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "In layman’s terms, VMAP allows content creators to specify where the ad breaks should be placed. This is especially useful for video content creators who want to control the video experience but don’t control the actual video player.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_74",
+                  "name": "d80e",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "One point to be clarified, VMAP is not a replacement for the VAST, but it can be used in addition to the VAST. VAST is the foundation, it can be served with or without VMAP. But not the vice-versa.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_75",
+                  "name": "7178",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "How VMAP works?",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 15,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_76",
+                  "name": "f80a",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "VMAP is a playlist structure that wraps one or more ad responses. VMAP defines things such as — ad break within a video, which ad types to display, and when each ad break should occur, etc. As mentioned earlier, VMAP cannot provide ads itself. It needs some other ad response such as VAST. Below diagrams explain the flow briefly:",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_77",
+                  "name": "0e1a",
+                  "type": "IMG",
+                  "href": null,
+                  "layout": "INSET_CENTER",
+                  "metadata": {
+                    "id": "1*9ZthNk_gXseyexXOqA6toQ.png",
+                    "originalHeight": 599,
+                    "originalWidth": 975,
+                    "focusPercentX": null,
+                    "focusPercentY": null,
+                    "alt": null,
+                    "__typename": "ImageMetadata"
+                  },
+                  "text": "VMAP (Free for Educational Purpose)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 4,
+                      "href": "https://iabtechlab.com/standards/video-multiple-ad-playlist-vmap/",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_78",
+                  "name": "d4fb",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "The video player requests the VMAP response from the primary adserver.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_79",
+                  "name": "b105",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "The primary server responds with a playlist of ad breaks. Each ad breaks references to a VAST response that provides a video player with ad specific for that ad break.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_80",
+                  "name": "c6ed",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "The video player displays the ad from the VAST response at the given time mentioned in the VMAP response.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_81",
+                  "name": "627e",
+                  "type": "OLI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Video player sends requests to the tracking URIs provided in the VMAP. The tracking URIs provide the start and end times of the ad break and few other VMAP level events.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_82",
+                  "name": "d366",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "These all are specific to the video ads. Now let’s look at something more generic and specific to the mobile — MRAID.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_83",
+                  "name": "ff5e",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "MRAID: Mobile Rich Media Ad Interface Definitions",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 49,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_84",
+                  "name": "907c",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "MRAID is not a protocol or a framework like the VAST or VMAP. It is the common API (Application Programming Interface) for mobile rich media ads that will run in mobile apps. This is a standardized set of commands designed to work with HTML5 and JavaScript that developers creating rich media ads use to communicate what those ads do (expand, resize, get access to the device functionalities such as the accelerometer, etc) with the apps into which they are being served.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_85",
+                  "name": "0fc7",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Without MRAID different apps (incorporating different rich media vendors’ SDKs) have disparate requirements in terms of the APIs that creative developers must use to communicate with the app. Therefore, the same creative must be rewritten in order to run across different apps.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_86",
+                  "name": "461e",
+                  "type": "BQ",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "MRAID offers a single API that diverse SDK vendors will support, which means that MRAID-compliant rich media ads will run within applications using any MRAID-compliant SDK. MRAID, therefore, enables creative agencies and rich media shops to more quickly and easily build rich creative that will run in different publishers’ mobile apps.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 336,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_87",
+                  "name": "09ad",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Compliance Test:",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "STRONG",
+                      "start": 0,
+                      "end": 16,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_88",
+                  "name": "653e",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "MRAID working group has developed multiple tools and utilities to help developers test and validate their MRAID ads as well as MRAID implementations in their app or ads SDK.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_89",
+                  "name": "b4cc",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "The compliance test consists of six test ads. These tests serve as an objective verification that the SDK being tested has correctly implemented all the features of the MRAID specification. Below are the six test ads.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_90",
+                  "name": "4d13",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Single-Part Expandable Ad",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_91",
+                  "name": "fae5",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Two-Part Expandable Ad (deprecated in 3.0)",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_92",
+                  "name": "5b64",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Full-Page Ad",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_93",
+                  "name": "e964",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Resize Ad",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_94",
+                  "name": "4f4c",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Resize Ad Designed to Cause MRAID Errors",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_95",
+                  "name": "36e4",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Video Interstitial Ad",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_96",
+                  "name": "2edf",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "One can refer to the IAB documents to read further about the standards and compliances. Few standards practices as per MRAID are:",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_97",
+                  "name": "2d71",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Initializing/Starting an MRAID ad: Add “mraid.js” to creative as early as possible. It can be done via HTML or DOM insertion.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_98",
+                  "name": "e0dc",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Interstitial ads An MRAID interstitial ad will include a close control and indicator, just like an expandable ad. Like expandable ads, this close indicator is shown at all times by the SDK.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_99",
+                  "name": "af80",
+                  "type": "ULI",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Resizeable ads: Be aware of how the creative is positioning itself within the container. Typically ad designers will position the ad at the top left of the container. In such cases, a resizable ad that moves UP from the bottom of the screen will cause the banner to jump up to the new top-left corner of the resized container. Ad designers should always specify how they are anchoring the creative in the container and do so in such a way that the banner does not jump around the screen",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_100",
+                  "name": "2c2a",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "There are many more and it’s not possible to cover all and neither that is the theme of the article.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_101",
+                  "name": "4d6d",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "VPAID has been deprecated and is being replaced by Open Measurement Interface Definition (OMID) and Secure Interactive Media Interface Definition (SIMID). So, we will not go into the details.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_102",
+                  "name": "fe97",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "As mentioned on the IAB site: “SIMID was born from the desire to support interactive ads in a safe and secure environment for publishers and also to enable better cross-platform support by supporting mobile, SSAI, and OTT devices. A main tenet of SIMID is the separation of the interactive layer from the media asset — both being delivered by VAST 4.x. This clear separation allows publisher players to be in control of their streams and enables use cases such as server-side ad insertion (SSAI), as well as live streaming.”",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "EM",
+                      "start": 31,
+                      "end": 524,
+                      "href": null,
+                      "anchorType": null,
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_103",
+                  "name": "6cda",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "In the first half of the article, we will understand what are Rich Media Ads and their different types. In the second half of the article, we will see how a video ad is served and a few IAB frameworks and standards.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_104",
+                  "name": "eb9c",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Very few people do understand the complexity of the digital advertising world. For most people — it’s just an ad coming on the webpage or an app. But very few appreciate or understand how complex and vast the ecosystem is. I wrote an article over Programmatic Advertising explaining one part of the ecosystem. In this article, I go a bit inside and focus on one of the Ad types. In the first half of the article, we will understand what are Rich Media Ads and their different types. In the second half of the article, we will see how a video ad is served and a few IAB frameworks and standards.",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_105",
+                  "name": "6a6e",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "Reference:",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_106",
+                  "name": "8eb8",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "https://support.google.com/richmedia/answer/2417545?hl=en&ref_topic=2417414&visit_id=637647185059651044-3014223390&rd=1#zippy=%2Cvideo%2Cvpaid%2Cbanner%2Cexpanding",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 163,
+                      "href": "https://support.google.com/richmedia/answer/2417545?hl=en&ref_topic=2417414&visit_id=637647185059651044-3014223390&rd=1#zippy=%2Cvideo%2Cvpaid%2Cbanner%2Cexpanding",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_107",
+                  "name": "9d26",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "https://iabtechlab.com/wp-content/uploads/2018/11/VAST4.1-final-Nov-8-2018.pdf",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 78,
+                      "href": "https://iabtechlab.com/wp-content/uploads/2018/11/VAST4.1-final-Nov-8-2018.pdf",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_108",
+                  "name": "f40b",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "https://iabtechlab.com/standards/mobile-rich-media-ad-interface-definitions-mraid/",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 82,
+                      "href": "https://iabtechlab.com/standards/mobile-rich-media-ad-interface-definitions-mraid/",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_109",
+                  "name": "aa41",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "https://iabtechlab.com/wp-content/uploads/2018/06/MRAID-3.0-Best-Practices-Guide.pdf",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 84,
+                      "href": "https://iabtechlab.com/wp-content/uploads/2018/06/MRAID-3.0-Best-Practices-Guide.pdf",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_110",
+                  "name": "6539",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "https://iabtechlab.com/standards/video-multiple-ad-playlist-vmap/",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 65,
+                      "href": "https://iabtechlab.com/standards/video-multiple-ad-playlist-vmap/",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_111",
+                  "name": "fb55",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "https://iabtechlab.com/wp-content/uploads/2016/04/VMAP.pdf",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 58,
+                      "href": "https://iabtechlab.com/wp-content/uploads/2016/04/VMAP.pdf",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                },
+                {
+                  "id": "3d8b257f7b51_112",
+                  "name": "e07a",
+                  "type": "P",
+                  "href": null,
+                  "layout": null,
+                  "metadata": null,
+                  "text": "https://iabtechlab.com/simid/",
+                  "hasDropCap": null,
+                  "dropCapImage": null,
+                  "markups": [
+                    {
+                      "type": "A",
+                      "start": 0,
+                      "end": 29,
+                      "href": "https://iabtechlab.com/simid/",
+                      "anchorType": "LINK",
+                      "userId": null,
+                      "linkMetadata": null,
+                      "__typename": "Markup"
+                    }
+                  ],
+                  "__typename": "Paragraph",
+                  "codeBlockMetadata": null,
+                  "iframe": null,
+                  "mixtapeMetadata": null
+                }
+              ],
+              "__typename": "RichText"
+            },
+            "__typename": "PostContent"
+          },
+          "__typename": "PostViewerEdge"
+        },
+        "__typename": "Post"
+      }
+    }
+  }
+]
+
+
+
+
+json = {
+  {
+    "postId": "435ed415ee63"
+
+},
+  "query" : "query PostViewerEdgeContentQuery(\n  $postId: ID!\n  \n) {\n  post(id: $postId) {\n    ... on Post {\n      id\n      title\n      viewerEdge {\n        \n        fullContent {\n          bodyModel {\n               paragraphs {\n                    text\n                    type\n                    }\n                }\n            }\n        } \n    }\n  }\n}\n\n\n  \n\n"
+
+}
+
+
+
+
+
+"<H3>The 2021 cookywook Social Awards — Winners!</H3>
+<figcaption>sorry for the bad image but i need one for the article preview</figcaption>
+<P>Earlier this week, I announced the 2021 cookywook Social Awards — an alternative to pay-to-enter industry awards, as picked by a panel of me.</P>
+<P>I announced the nominees across five made-up categories, and today we announce the WINNERS. I don’t really know why I left a three-day gap between these posts, but I’ve never run any awards before, and I guess I’m trying to build some kind of excitement?</P>
+<P>In any case, here are some winners.</P>
+<H3>SHORTEST LIVED TREND OF THE YEAR</H3>
+<P>The winner here simply has to be Twitter Fleets!</P>
+<P>If you don’t remember, Fleets was a feature Twitter launched in November 2020 and retired in July 2021. But its actual lifespan felt a lot shorter than that? The gradual rollout and low adoption of the feature didn’t help much, and you’d be forgiven for not even being aware it was a thing at all.</P>
+<P>I get why Twitter introduced Fleets. Like every social platform, Twitter wants to dominate. There’s a specific use case in the social sharing space for ephemeral content. Twitter doesn’t want you to go elsewhere to fulfil it. Or, to put it more cynically: Twitter just wanted to do Stories too.</P>
+<P>So why didn’t it work? It’s hard to pin down exactly. It’s not always a case of “you can’t improve on the original”. Instagram Stories, for example, was just a reimplementation of Snapchat’s stories and remains highly popular.</P>
+<P>Maybe Twitter was already kinda ephemeral? You don’t curate your Twitter feed like you do an Instagram grid, nor do you consume it in the same way. Twitter is all about ‘what’s happening now’, and trying to launch a more now-er thing on top of that didn’t really make sense.</P>
+<P>So I give it the win for being a weird decision that many said would flop. And it just makes me sad to see Twitter doing this kind of thing. Yes, modern product engineering is all about iteration, and failure is a part of that. But why build this over things people actually want? Oh no, I’m tailing off into my Twitter-bashing spiel again…</P>
+<H3>BEEFIEST BRAND BEEF</H3>
+<P>Do I want to be encouraging brand beef? Probably not. It’s a kind of toxic marketing behaviour that has a cousin in lad banter culture.</P>
+<P>I think a lot about the comment we got on a TikTok once that was basically, “I want to see you having a go at Revolut”. It’s a depressing thought that there’s an appetite for inter-brand aggression in social audiences. And it reduces things down to tribal football rivalries, which isn’t what I consider part of the art of marketing.</P>
+<P>But anyway, the winner is Aldi vs. Marks and Spencer, of course.</P>
+<P>I picked this one because of how savage it got. It started off as a bit of cheeky fun from the Aldi team around the caterpillar cake lawsuit. I still don’t really get how they’re allowed to do this, legally, but whatever. Marks and Spencer absolutely failed to rise to the challenge and have demonstrably lost the battle in the court of public opinion on this one.</P>
+<P>But there was a point where it got kind of dirty. And I’d point to specifically this Aldi tweet:</P>
+<P>To be clear, Aldi are asking M&S to publicly give permission for a limited edition Cuthbert cake in exchange for charity donations. It’s an extortive proposition, to say the least. As one Twitter user put it, “I would maybe not weaponise cancer sufferers for the sake of defending an IP lawsuit”.</P>
+<P>So can we leave this kind of thing in 2021, please?</P>
+<H3>VIRAL MOMENT OF THE YEAR</H3>
+<P>A toughie! I guess the Parish Council meeting has had the most longevity. But Weetabeans gave the UK a genuine contender to the historic Oreo Superbowl moment.</P>
+<P>But this has to be the October 4th Facebook/WhatsApp/Instagram outage. It’s sad to say, but it was probably the most fun day I had at work all year. I was up till like 1am making memes and directing folks to our other channels (an absolutely massive day for our LinkedIn numbers).</P>
+<P>There’s something about these kinds of global emergencies, where nothing actually bad is happening, but everyone is affected, that are ripe for creative content. My love for reactive marketing is well-established, and this was a moment where many brands stepped up to the challenge.</P>
+<P>Obviously, I feel for the poor engineers who had to deal with the actual outage. But hey, it gave us some great content.</P>
+<H3>MOST DESPERATE BRAND OF THE YEAR</H3>
+<P>Easy one, this. Meta.</P>
+<P>This is an interesting example of the emergent phenomenon of brand pile-ons. That’s when something happens and all the brands come and join in. You see this a lot in viral TikToks’ comments and things like the Weetabeans event on Twitter.</P>
+<P>All pile-ons are kinda bad. They’re all pretty transparent marketing plays to crowbar a brand into relevance. But at least they’re sort of organic. If a video goes viral, commenting on it with something witty is at least a clever thing to do.</P>
+<P>But when it stops being organic, that’s a problem. You can’t manufacture your own Weetabeans moment. And you absolutely can’t go begging for the brands to pile-on. It’s not really even a pile-on if you’re invited.</P>
+<P>And there’s something about this being Facebook that makes it extra fun. Facebook SO DESPERATELY wants to make the Metaverse happen. So at least they’re being consistent with their brand.</P>
+<H3>BLUNDER OF THE CENTURY</H3>
+<P>I would say the Burger King UK women tweet because it was shocking both for its content and execution (from a usually exceptional brand). But it’s gotta be Amazon.</P>
+<P>It just boggles my mind that they would tweet this. Something that it sounds bad to even try to deny. And also, something is provably untrue?</P>
+<P>It just makes me sad that there are Social Media workers out there doing this kind of thing. Sure, the Amazon News Twitter account probably isn’t run by some hyper-savvy expert who knows how hot a topic workers’ rights are on social. But still, whoever tweeted this out needs to look at themselves and ask, “are we the baddies?”</P>
+<H3>TWEET OF THE YEAR</H3>
+<P>There was only one nominee because it was perfect.</P>
+<P>The tweet that broke the internet, and also my brain. Completely unhinged branded content that makes you wonder why you bother having any kind of planning or strategy when you could just tweet out cheese.</P>
+<P>Let’s bring more branded cheese-posting into 2022. It’s what the world needs.</P>
+<P>THANKS. I hope you enjoyed the first annual cookywook social awards! Let me know if you like them! I might make them more regular or something, who knows.</P>
+"
+
+
+
+
+
+
+
+
+
+
+
+
+
