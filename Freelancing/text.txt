@@ -1,0 +1,119 @@
+Loss Aversion â€” how fear influences customer choice
+Why the possibility of loss is one of the most potent psychological principles in marketing
+Photo by Kristina Tripkovic on Unsplash
+Have you ever experienced FOMO â€” the â€œFear of Missing Outâ€?
+
+Itâ€™s a form of social anxiety that makes people scared theyâ€™re being left out of exciting or interesting events. Itâ€™s usually triggered by posts on social media, where it looks like the whole world is having fun without you.
+
+If you suffer from FOMO, youâ€™re not alone. A recent study found that 70% of millennials experience the fear of missing out regularly.
+
+Thereâ€™s a profound psychological principle behind why people experience FOMO.
+
+Itâ€™s called Loss Aversion, and it can be a powerful design mechanism for guiding customer choice.
+
+Photo by Noah Silliman on Unsplash
+What is Loss Aversion?
+First identified by Nobel Prize-winner Daniel Kahneman, Loss Aversion is a psychological principle that says people will go to great lengths to avoid losing.
+
+In fact, the psychological pain of losing is twice as powerful as the pleasure of winning.
+
+Because itâ€™s so powerful, Loss Aversion features heavily in cognitive psychology and decision theory. Itâ€™s also one of the most effective tactics for getting customers to buy (the other being Social Proof).
+
+A customerâ€™s hatred of losing can take lots of forms, each with fascinating applications.
+
+How information is presented can dramatically impact what decisions people make
+â€œLosses loom larger than gains.â€
+
+â€” Daniel Kahneman
+
+Photo by JC Gellidon on Unsplash
+For example, a study was conducted to see if framing cancer treatments using Loss Aversion could improve surgery opt-in rates.
+
+The research team hypothesized that opt-in rates were related to how the options were framed.
+
+To test this hypothesis, doctors presented patients with two options. Each framed surgery as a potential gain or a possible loss â€” the results were staggering.
+
+Surgery framed as a gain: â€œThe one-month survival rate of surgery is 90%.â€
+Surgery framed as a loss: â€œThere is a 10% chance of death in the month post-surgery.â€
+When framed as a gain, 84% of people chose surgery. But when framed as a loss, only 50% opted in.
+
+This simple application of Loss Aversion increased surgery opt-ins by 54%.
+
+Ownership creates emotional bonds that people donâ€™t want to break
+This principle is known as the Endowment Effect. Itâ€™s a psychological principle that falls under the Loss Aversion umbrella.
+
+In â€œPredictably Irrational,â€ Dan Ariely describes this effect through the lens of Duke University basketball.
+
+Photo by JC Gellidon on Unsplash
+If youâ€™re unfamiliar with Duke basketball, all you need to know is the Duke-UNC game is the biggest of the year. And that it takes place in an area of the country where basketball is a religion.
+
+To score tickets to this game, students have to camp out for weeks. They then enter a lottery for a chance to win tickets.
+
+Ariely reached out to students who won tickets and those who entered the lottery but didnâ€™t win. Both had invested the same amount of pain, sacrifice, time, and effort to enter the lottery. But some had won, and others hadnâ€™t.
+
+Would this affect how each group valued the basketball tickets?
+
+The results were interesting. Students who were not successful in the lottery said theyâ€™d pay an average of $170 for a ticket.
+
+But the students who did get a ticket? When asked how much theyâ€™d sell their ticket for, they asked 170% more for their ticket â€” about $2,400 on average.
+
+The question is â€” why were the owners asking so much for their tickets?
+
+The answer? Emotion.
+
+According to Ariely, once someone owns a product, they begin fantasizing about their future experiences. Once they create these â€œpre-memoriesâ€ of the game, ticket-holders donâ€™t want to lose out.
+
+So these students wouldnâ€™t only be selling a ticket. Theyâ€™d be losing out on potential memories, emotions, and good times.
+
+The lesson â€” the more emotions associated with a product, the more people value it.
+
+How to use Loss Aversion in your marketing
+â€œI have seen one mail order advertisement actually sell not twice as much, not three times as much but nineteen and a half times as much merchandise as another ad for the same product.
+
+Both were run in the same publication. Both had photographic illustrations. Both had carefully written copy.
+
+The difference was that one used the right appeal and the other used the wrong appeal.â€
+
+â€” John Caples, â€œTested Advertising Methodsâ€
+
+1. Create FOMO with â€œonly a few leftâ€ messaging:
+Source: Booking.com
+Booking.com does a great job using Loss Aversion to nudge sales. When customers are browsing hotel deals, they see a message like the one above â€” â€œOnly 6 rooms left on our site!â€
+
+This copy pushes customers who might be on the fence to buy before they miss out.
+
+2. Create a sense of impending loss with a countdown clock
+Source: NASA via MooSend
+In this example from NASA, a launch countdown clock creates a sense of urgency and Fear of Missing Out.
+
+3. Create an emotional bond with free trials:
+Source: Dropbox for Business
+If you want to produce the Endowment Effect (like Ariely in the basketball example above), a free product trial is effective.
+
+Once your product is in a customerâ€™s home, an emotional bond is developed through use. The feeling of ownership is a powerful psychological tool for getting and keeping customers.
+
+In this example, from Dropbox for Business, a 30-day trial starts creating an emotional bond.
+
+Photo by Reynolds on Unsplash
+Hereâ€™s how to apply Loss Aversion without sounding spammy
+The danger of using traditional Loss Aversion signals is that they can come across as spammy. â€œLast chance!â€ â€œHurry!â€ (and in emails, these words can get your email sent directly to Spam)
+
+People are smart, and they donâ€™t want to feel like youâ€™re manipulating them.
+
+The bottom line
+So how do you use Loss Aversion without sounding spammy?
+
+Itâ€™s simple â€” have empathy for your customers. Dive deeper to truly get to know their pains and fears. Hereâ€™s how:
+
+Understand specifically what your audience is afraid of losing
+Understand why theyâ€™re so scared of losing this thing
+Develop materials that address their worries, and give them a potential solution
+Only after you know your customers better than your competitors can you effectively frame an offer using Loss Aversion.
+
+Note: This article is adapted from concepts in my book â€œChoice Hacking: How to use psychology and behavioral science to create an experience that singsâ€.
+
+Found this article useful? You can check out my most popular articles below:
+
+Choice Overload â€” Why simplicity is the key to winning customers
+How Netflix uses psychology to perfect their customer experience
+5 psychological principles that will improve your customer experience

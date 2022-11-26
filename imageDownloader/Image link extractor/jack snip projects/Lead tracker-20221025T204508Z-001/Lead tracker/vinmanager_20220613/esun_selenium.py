@@ -376,6 +376,10 @@ class WebBrowser():
             logger.debug('%s', TimeoutException)
             return []
 
+    def find_elements_by_xpath(self,locator):
+        elements = self._driver.find_elements("xpath",locator)
+        return elements
+
     def find_by_class(self, classname, timeout=None):
         ''' Get one item by class'''
         if not timeout:

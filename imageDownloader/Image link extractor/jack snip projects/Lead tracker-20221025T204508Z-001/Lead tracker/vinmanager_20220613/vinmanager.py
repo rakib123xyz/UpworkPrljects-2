@@ -44,8 +44,18 @@ def update_leads_excel(list_leads):
 
         wb.save("data.xlsx")
 
+def should_refresh(startTime,interval=30):
+    started_at = startTime
+    currentTime = time.time()
+    interval = interval
+    if (currentTime- started_at) > interval:
+        return True
+    else:
+        return False
+
 
 def get_data(browser,url):
+    start_Time = time.time()
     global list_leads
     browser.get_url(url)
     time.sleep(1)
@@ -64,30 +74,40 @@ def get_data(browser,url):
     btn_next = browser.find_by_id("signIn")
     time.sleep(1)
     browser.click_element(btn_next)
+    inpt = input("Please type yes if login successful : ")
+    time.sleep(5)
     
     print("Login successful")
     time.sleep(5)
     while True:
         try:
-            #check logined? if not login. login again
-            input_username = browser.find_by_id(locator="username",)
-            if input_username:
-                input_username.send_keys(username)
 
-                btn_next = browser.find_by_id("signIn")
-                time.sleep(1)
-                browser.click_element(btn_next)
+            if should_refresh(start_Time,interval=config.check_login_interval):
+                print("Loging check..")
 
-                time.sleep(1)
-                input_password = browser.find_by_id("password")
-                input_password.send_keys(password)
+                #check logined? if not login. login again
+                input_username = browser.find_by_id(locator="username",timeout=10)
+                if input_username:
 
-                btn_next = browser.find_by_id("signIn")
-                time.sleep(1)
-                browser.click_element(btn_next)
-                time.sleep(5)
+                    input_username.send_keys(username)
+
+                    btn_next = browser.find_by_id("signIn")
+                    time.sleep(1)
+                    browser.click_element(btn_next)
+
+                    time.sleep(1)
+                    input_password = browser.find_by_id("password")
+                    input_password.send_keys(password)
+
+                    btn_next = browser.find_by_id("signIn")
+                    time.sleep(1)
+                    browser.click_element(btn_next)
+                    start_Time = time.time()
+
+
 
             url_leads = "https://apps.vinmanager.com/CarDashboard/Pages/LeadManagement/ActiveLeads_WorkList.aspx"
+            #url_leads = "file:///C:/Users/Rakib/Desktop/Untitled%20Page.html"
             browser.get_url(url_leads)
             time.sleep(1)
             # browser.switch_to_frame_by_id("cardashboardframe")
@@ -99,21 +119,30 @@ def get_data(browser,url):
 
             #check data new lead
 
-            tbody_element = browser.find_all_by_xpath(locator='//table[@id="ctl00_ContentPlaceHolder1LeadBucket_ctl00"]//tbody')
-            if tbody_element :
-                tbody = tbody_element[0]
-                trs = tbody.find_elements(By.TAG_NAME, "tr")
+            #tbody_element = browser.find_all_by_xpath(locator='//div[@id="ctl00_ContentPlaceHolder1__LeadBucket"]//tbody')
 
-                for tr in trs:
-                    try:
+            #
+            # tbody = tbody_element[0]
+            # print(tbody_element[0].text())
 
-                        tds = tr.find_elements(By.TAG_NAME, "td")
+            trs = browser.find_elements_by_xpath(locator='//div[@id="ctl00_ContentPlaceHolder1__LeadBucket"]//tbody/tr')
 
-                        if "No leads to display" in tds[0].text:
-                            print("No leads to display")
-                            break
-                        if "This screen will auto-refresh every " in tr.text or "Customer Source" in tr.text:
-                            continue
+            for tr in trs:
+
+                try:
+
+                    tds = tr.find_elements(By.TAG_NAME,"td")
+
+
+                    # if "No leads to display" in tds[0].text:
+                    #     print("No leads to display")
+                    #     break
+                    # if "This screen will auto-refresh every " in tr.text or "Customer Source" in tr.text:
+                    #     continue
+                    if len(tds) <= 1:
+                        print("No leads to display")
+                        break
+                    if len(tds) > 1:
 
                         customer = tds[1].text
                         source = tds[2].text
@@ -126,7 +155,7 @@ def get_data(browser,url):
                             list_leads.append(obj)
                             update_leads_excel(list_leads)
 
-                            subject = "The web has new lead" 
+                            subject = "The web has new lead"
                             data = json.dumps(obj, indent=2)
                             mess = data
                             if type_notify == "G":
@@ -138,11 +167,16 @@ def get_data(browser,url):
                                     mess,
                                     "",
                                     "","https://vinmanager.com",disc_hook)
-                    except:
-                        pass
 
 
-        except:
+
+                        else:
+                            print(" already captured")
+                except Exception as e1:
+                    print(e1)
+
+
+        except Exception as e:
             pass
 
         

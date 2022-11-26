@@ -122,8 +122,20 @@ def parse(response,id,url):
                         text = f"<figcaption>{text}</figcaption>\n"
                     elif _type == "BQ" or _type == "PQ":
                         text = f"<blockquote>{text}</blockquote>\n"
-                    else:
-                        text = f"<{_type}>{text}</{_type}>\n"
+                    elif _type == "H3":
+                        text = f"<H1>{text}</H1>\n"
+                    elif _type == "H4":
+                        text = f"<H2>{text}</H2>\n"
+                    elif _type == "H5":
+                        text = f"<H3>{text}</H3>\n"
+                    elif _type == "H6":
+                        text = f"<H4>{text}</H4>\n"
+                    elif _type == "P":
+                        text = f"<P>{text}</P>\n"
+                    elif _type == "PRE":
+                        text = f"<PRE>{text}</PRE>\n"
+                    elif _type == "IFRAME":
+                        text = f"<IFRAME>{text}</IFRAME>\n"
 
                 elif (_type == "ULI" or _type == "OLI"):
                     if _type =="ULI":
