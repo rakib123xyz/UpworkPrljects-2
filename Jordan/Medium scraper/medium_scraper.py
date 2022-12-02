@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures import ProcessPoolExecutor
 import requests as Requests
 
-csv_columns = ["Post_url","Title","Post_Details","Author_Name",]
+csv_columns = ["Title","PostDetails","Page_URL","TimeStamp","Author","Tags",]
 index = 0
 
 csvfile = open("medium.csv", "w", newline="",encoding="utf-8-sig")
@@ -93,16 +93,16 @@ def start_requests( index,url):
 
 def parse(response,id,url):
     item = dict()
-    item["Post_url"] = url
+    item["Page_URL"] = url
     item["Title"] = ""
-    item["Post_Details"]=""
-    item["Author_Name"] = ""
+    item["PostDetails"]=""
+    item["Author"] = ""
 
     if response.status_code == 200:
 
         result = json.loads(response.text)
         item["Title"] = result[0]["data"]["post"]["title"]
-        item["Author_Name"] = result[0]["data"]["post"]["creator"]["name"]
+        item["Author"] = result[0]["data"]["post"]["creator"]["name"]
 
         details = ""
 
@@ -155,10 +155,10 @@ def parse(response,id,url):
 
             details =f"{details}{text}"
 
-        item["Post_Details"] = str(details)
+        item["PostDetails"] = str(details)
 
-    if len(item["Post_Details"]) > 32758:
-        item["Post_Details"] = "out of range"
+    if len(item["PostDetails"]) > 32758:
+        item["PostDetails"] = "out of range"
 
     writer.writerow(item)
     csvfile.flush()
@@ -184,7 +184,7 @@ with ThreadPoolExecutor(max_workers=10) as executor:
         except Exception as e:
             print('Looks like something went wrong:',e)
             traceback.print_exc()
-            default_Item["Post_url"] = url
+            default_Item["Page_URL"] = url
             writer.writerow(default_Item)
             csvfile.flush()
             with open("missing_urls.txt",mode="a") as f:
